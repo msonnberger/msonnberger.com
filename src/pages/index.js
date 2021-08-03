@@ -1,6 +1,6 @@
 import React from 'react';
-import { GlobalStyle } from '../styles';
-import { Layout, Hero } from '../components';
+import { GlobalStyle } from '@styles';
+import { Layout, Hero } from '@components';
 
 const IndexPage = () => (
   <Layout>

@@ -10,6 +10,8 @@ const GlobalStyle = createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
 
   html {
@@ -17,20 +19,32 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    margin: 0;
     background-color: var(--blue-dark);
     color: var(--blue-mid);
     font-family: 'Source Sans Pro', sans-serif;
-  }
-
-  main {
-    margin: 0;
+    font-size: 2rem;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    margin: 0;
     margin-bottom: 1rem;
     line-height: 1;
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 -4px 0 0 var(--orange) inset;
+    transition: all 100ms;
+  }
+
+  a:hover {
+    box-shadow: 0 -28px 0 0 var(--orange) inset;
+    color: var(--blue-dark);
   }
 `;
 
