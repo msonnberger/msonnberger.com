@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import Title from './title';
-import { Spacer } from '../../index';
+import { Spacer } from '../index';
 
 const StyledSection = styled.section``;
 
 const Hero = () => (
   <StyledSection>
     <Spacer axis="vertical" size={100} />
-    <Title>Hi, I am</Title>
-    <Title accent>Martin Sonnberger</Title>
+    <h2>Hi, I am</h2>
+    <h1>Martin Sonnberger</h1>
   </StyledSection>
 );
 
