@@ -11,7 +11,7 @@ const IndexPage = () => (
       <meta charSet="utf-8" />
     </Helmet>
     <Hero />
-    {/* <About /> */}
+    <About />
   </Layout>
 );
 

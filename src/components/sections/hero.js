@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Spacer } from '@components';
 import { IconGithub, IconLinkedin, IconEmail } from '@components/icons';
 
-const StyledSection = styled.section`
+const StyledHeroSection = styled.section`
   h1 {
     color: var(--orange);
   }
@@ -34,7 +34,7 @@ const StyledSection = styled.section`
 `;
 
 const Hero = () => (
-  <StyledSection>
+  <StyledHeroSection>
     <Spacer axis="vertical" size={100} />
     <h2>Hi, I am</h2>
     <h1>Martin Sonnberger</h1>
@@ -78,7 +78,7 @@ const Hero = () => (
         </a>
       </li>
     </ul>
-  </StyledSection>
+  </StyledHeroSection>
 );
 
 export default Hero;
