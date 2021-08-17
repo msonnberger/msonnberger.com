@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Spacer, SectionTitle } from '@components';
+import { SectionTitle } from '@components';
 
 const calcAge = () => {
   const myBirthday = new Date(2001, 8, 26); // month is 0-based index
@@ -18,6 +18,10 @@ const StyledAboutSection = styled.section`
     width: 35rem;
     transform: translate(-40px, 18px);
   }
+
+  p > i {
+    font-size: 70%;
+  }
 `;
 
 const About = () => (
@@ -33,13 +37,14 @@ const About = () => (
     <p>
       Hello! I’m a {calcAge()} year old college student from Austria. Since
       middle school I’ve known that I’ll want to do “something with computers”.
-      After studying one semester of traditional computer science in Vienna, I
-      decided to move to Salzburg to further persue my dream of becoming a web
-      developer.
+      After studying one semester of traditional computer science in Vienna, it
+      clicked for me <i>(no pun intended)</i> and I knew that I wanted to become
+      a professional web developer. In order to further pursue this dream, I
+      decided to move to Salzburg to study MultiMediaTechnology there.
     </p>
     <p>
-      When not sitting in front of my computer, I like cooking and playing the
-      trumpet.
+      When not sitting in front of my computer, I like cooking, hiking and
+      playing the trumpet.
     </p>
   </StyledAboutSection>
 );

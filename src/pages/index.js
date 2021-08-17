@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { GlobalStyle } from '@styles';
-import { Layout, Hero, About } from '@components';
+import { Layout, Hero, About, Projects } from '@components';
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +12,7 @@ const IndexPage = () => (
     </Helmet>
     <Hero />
     <About />
+    {/* <Projects /> */}
   </Layout>
 );
 

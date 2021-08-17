@@ -8,7 +8,23 @@ module.exports = {
     'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-image',
-    'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          placeholder: 'none',
+          backgroundColor: '#001a36',
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: `${__dirname}/data`,
+      },
+    },
+    'gatsby-transformer-json',
   ],
 };
