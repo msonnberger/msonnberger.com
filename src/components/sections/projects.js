@@ -1,7 +1,13 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Spacer, SectionTitle } from '@components';
+import { Spacer, SectionTitle, ProjectCard } from '@components';
+
+const StyledProjectsSection = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -22,14 +28,15 @@ const Projects = () => {
   const projectsData = data.projects.nodes;
 
   return (
-    <>
+    <StyledProjectsSection>
+      <Spacer axis="vertical" size={50} />
       <SectionTitle>Stuff I've Built</SectionTitle>
       {projectsData &&
         projectsData.map((project) => {
-          const { name } = project;
-          return <p>{name}</p>;
+          return <ProjectCard {...project} />;
         })}
-    </>
+      <Spacer axis="vertical" size={80} />
+    </StyledProjectsSection>
   );
 };
 

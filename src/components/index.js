@@ -4,3 +4,4 @@ export { default as Projects } from './sections/projects';
 export { default as Layout } from './layout';
 export { default as Spacer } from './spacer';
 export { default as SectionTitle } from './sectionTitle';
+export { default as ProjectCard } from './projectCard';

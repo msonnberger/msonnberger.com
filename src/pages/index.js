@@ -12,7 +12,7 @@ const IndexPage = () => (
     </Helmet>
     <Hero />
     <About />
-    {/* <Projects /> */}
+    <Projects />
   </Layout>
 );
 
