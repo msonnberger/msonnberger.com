@@ -29,13 +29,13 @@ const Projects = () => {
 
   return (
     <StyledProjectsSection>
-      <Spacer axis="vertical" size={50} />
+      <Spacer axis="vertical" size={70} />
       <SectionTitle>Stuff I've Built</SectionTitle>
       {projectsData &&
         projectsData.map((project) => {
           return <ProjectCard {...project} />;
         })}
-      <Spacer axis="vertical" size={80} />
+      <Spacer axis="vertical" size={120} />
     </StyledProjectsSection>
   );
 };
