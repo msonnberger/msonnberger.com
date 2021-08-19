@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 import { Spacer } from '@components';
-import { IconChevronRight } from '@components/icons';
+import { IconGithub, IconExternal } from '@components/icons';
 
 const Box = styled.div`
   width: 35rem;
@@ -13,14 +12,12 @@ const Box = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-
-  &:hover svg {
-    transform: scale(1.1);
-  }
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 `;
 
 const Name = styled.h4`
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: var(--blue-light);
 `;
 
@@ -45,13 +42,18 @@ const TechItem = styled.li`
 
 const LinkWrapper = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  align-self: flex-end;
-  font-size: 1.8rem;
+  justify-content: space-evenly;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 100%;
 
   a {
     box-shadow: none;
+    display: flex;
+  }
+
+  a:hover {
+    color: var(--orange);
   }
 
   svg {
@@ -61,7 +63,7 @@ const LinkWrapper = styled.div`
 `;
 
 const ProjectCard = (project) => {
-  const { name, slug, url, repo, techstack, description } = project;
+  const { name, url, repo, techstack, description } = project;
   return (
     <Box>
       <Name>{name}</Name>
@@ -72,10 +74,18 @@ const ProjectCard = (project) => {
       </TechList>
       <Spacer axis="vertical" size={20} />
       <p style={{ color: 'var(--blue-light)' }}>{description}</p>
+      <Spacer axis="vertical" size={10} />
       <LinkWrapper>
-        <Link to={slug}>Read more</Link>
-        <Spacer axis="horizontal" size={2} />
-        <IconChevronRight />
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          <span>Live Site</span>
+          <Spacer axis="horizontal" size={4} />
+          <IconExternal />
+        </a>
+        <a href={repo} target="_blank" rel="noopener noreferrer">
+          <span>Code</span>
+          <Spacer axis="horizontal" size={6} />
+          <IconGithub />
+        </a>
       </LinkWrapper>
     </Box>
   );

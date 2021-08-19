@@ -18,10 +18,6 @@ const StyledAboutSection = styled.section`
     width: 35rem;
     transform: translate(-40px, 18px);
   }
-
-  p > i {
-    font-size: 70%;
-  }
 `;
 
 const About = () => (
@@ -38,9 +34,9 @@ const About = () => (
       Hello! I’m a {calcAge()} year old college student from Austria. Since
       middle school I’ve known that I’ll want to do “something with computers”.
       After studying one semester of traditional computer science in Vienna, it
-      clicked for me <i>(no pun intended)</i> and I knew that I wanted to become
-      a professional web developer. In order to further pursue this dream, I
-      decided to move to Salzburg to study MultiMediaTechnology there.
+      clicked for me and I knew that I wanted to become a professional web
+      developer. In order to further pursue this dream, I decided to move to
+      Salzburg to study MultiMediaTechnology there.
     </p>
     <p>
       When not sitting in front of my computer, I like cooking, hiking and
