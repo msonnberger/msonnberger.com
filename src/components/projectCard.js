@@ -4,7 +4,7 @@ import { Spacer } from '@components';
 import { IconGithub, IconExternal } from '@components/icons';
 
 const Box = styled.div`
-  width: 35rem;
+  width: min(35rem, 100%);
   border-radius: 1.2rem;
   background-color: var(--blue-muted);
   padding: 2.4rem;

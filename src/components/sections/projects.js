@@ -3,10 +3,17 @@ import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 import { Spacer, SectionTitle, ProjectCard } from '@components';
 
-const StyledProjectsSection = styled.section`
+const ProjectsSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+
+const ProjectsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+  place-items: center;
 `;
 
 const Projects = () => {
@@ -28,15 +35,17 @@ const Projects = () => {
   const projectsData = data.projects.nodes;
 
   return (
-    <StyledProjectsSection>
+    <ProjectsSection>
       <Spacer axis="vertical" size={70} />
       <SectionTitle>Stuff I've Built</SectionTitle>
-      {projectsData &&
-        projectsData.map((project) => {
-          return <ProjectCard {...project} />;
-        })}
+      <ProjectsWrapper>
+        {projectsData &&
+          projectsData.map((project) => {
+            return <ProjectCard {...project} />;
+          })}
+      </ProjectsWrapper>
       <Spacer axis="vertical" size={120} />
-    </StyledProjectsSection>
+    </ProjectsSection>
   );
 };
 
