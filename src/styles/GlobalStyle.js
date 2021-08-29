@@ -3,10 +3,6 @@ import variables from './variables';
 
 const GlobalStyle = createGlobalStyle`
   ${variables}
-
-  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
   
   *,
   *::before,
