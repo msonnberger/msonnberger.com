@@ -5,6 +5,14 @@
     "url": "https://projects.msonnberger.com/darts-io/",
     "repo": "https://www.github.com/msonnberger/darts-io/",
     "techstack": ["PHP", "WebSocket", "JavaScript"],
-    "description": "A web app for remotly exchanging darts scores with your friends in real time. Create a new room and set your game rules or join an existing one and have fun playing!"
+    "description": "A web app for remotely exchanging darts scores with your friends in real time. Create a new room and set your game rules or join an existing one and have fun playing!"
+  },
+  {
+    "name": "Metro Vienna",
+    "slug": "metro-vienna-monitor",
+    "url": "https://projects.msonnberger.com/metro-vienna-monitor/",
+    "repo": "https://www.github.com/msonnberger/metro-vienna-monitor/",
+    "techstack": ["React.js", "NodeJS", "Next.js"],
+    "description": "A departure monitor for Vienna's metro lines using the official realtime API provided by Wiener Linien. Monitor design resembles original displays in metro stations."
   }
 ]
