@@ -10,8 +10,10 @@ const ProjectsSection = styled.section`
 `;
 
 const ProjectsWrapper = styled.div`
+  width: min(76rem, 100vw);
+  padding: 0 2rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 35fr));
   gap: 2rem;
   place-items: center;
 `;
