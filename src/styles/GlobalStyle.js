@@ -44,6 +44,10 @@ const GlobalStyle = createGlobalStyle`
     box-shadow: 0 -28px 0 0 var(--orange) inset;
     color: var(--blue-dark);
   }
+
+  ul {
+    list-style-position: inside;
+  }
 `;
 
 export default GlobalStyle;
