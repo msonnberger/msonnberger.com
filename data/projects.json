@@ -12,7 +12,7 @@
     "slug": "metro-vienna-monitor",
     "url": "https://projects.msonnberger.com/metro-vienna-monitor/",
     "repo": "https://www.github.com/msonnberger/metro-vienna-monitor/",
-    "techstack": ["React.js", "NodeJS", "Next.js"],
+    "techstack": ["React", "Node.js", "Next.js"],
     "description": "A departure monitor for Vienna's metro lines using the official realtime API provided by Wiener Linien. Monitor design resembles original displays in metro stations."
   }
 ]
