@@ -7,7 +7,7 @@ const StyledLink = styled(Link)`
   box-shadow: none;
   color: var(--blue-mid);
   font-size: 1.8rem;
-  margin: 1rem auto;
+  margin: 2rem auto;
 
   &:hover {
     color: var(--blue-light);
