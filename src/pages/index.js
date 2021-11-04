@@ -9,6 +9,7 @@ const IndexPage = () => (
     <Helmet htmlAttributes={{ lang: 'en' }}>
       <title>Martin Sonnberger</title>
       <meta charSet="utf-8" />
+      <link rel="icon" type="image/png" href="favicon.png" sizes="50x50" />
     </Helmet>
     <Hero />
     <About />
