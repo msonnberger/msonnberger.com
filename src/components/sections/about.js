@@ -39,8 +39,8 @@ const About = () => (
       Salzburg to study MultiMediaTechnology there.
     </p>
     <p>
-      When not sitting in front of my computer, I like cooking, hiking and
-      playing the trumpet.
+      When not sitting in front of my computer, I like cooking and playing the
+      trumpet.
     </p>
   </StyledAboutSection>
 );

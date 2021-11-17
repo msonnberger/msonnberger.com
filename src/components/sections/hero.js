@@ -48,7 +48,7 @@ const Hero = () => (
       >
         Salzburg University of Applied Sciences.
       </a>{' '}
-      I like building beautiful, well-crafted things for the web.
+      I like building cool things for the web.
     </p>
     <Spacer axis="vertical" size={20} />
     <ul>
