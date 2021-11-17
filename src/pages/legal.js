@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 import { GlobalStyle } from '@styles';
@@ -28,10 +27,6 @@ const StyledLink = styled(Link)`
 const LegalPage = () => (
   <Layout>
     <GlobalStyle />
-    <Helmet htmlAttributes={{ lang: 'en' }}>
-      <title>Martin Sonnberger</title>
-      <meta charSet="utf-8" />
-    </Helmet>
     <Spacer axis="vertical" size={30} />
     <StyledLink to="/">
       <IconChevronLeft /> Go Back
