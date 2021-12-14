@@ -23,7 +23,7 @@ const StyledFooter = styled.footer`
 const Footer = () => {
   return (
     <StyledFooter>
-      <StyledLink to="/legal">Legal</StyledLink>
+      <StyledLink to="/legal">Legal Notice</StyledLink>
     </StyledFooter>
   );
 };
