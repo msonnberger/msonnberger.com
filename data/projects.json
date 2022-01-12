@@ -4,7 +4,7 @@
     "slug": "darts-io",
     "url": "https://projects.msonnberger.com/darts-io/",
     "repo": "https://www.github.com/msonnberger/darts-io/",
-    "techstack": ["PHP", "WebSocket", "JavaScript"],
+    "techstack": ["PHP", "WebSocket", "Vanilla JS"],
     "description": "A web app for remotely exchanging darts scores with your friends in real time. Create a new room and set your game rules or join an existing one and have fun playing!"
   },
   {
@@ -16,9 +16,9 @@
     "description": "A departure monitor for Vienna's metro lines using the official realtime API provided by Wiener Linien. Monitor design resembles original displays in metro stations."
   },
   {
-    "name": "Portfolio Christoph Schafzahl",
+    "name": "cschafzahl.com",
     "slug": "portfolio-christoph-schafzahl",
-    "url": "https://portfolio-christoph-jade.vercel.app",
+    "url": "https://cschafzahl.com",
     "repo": "https://github.com/ChristophSchafzahl/portfolio-christoph",
     "techstack": ["React", "Next.js", "TailwindCSS"],
     "description": "I built a portfolio website for Christoph, a fellow game dev student of mine, showcasing his game projects as well as some of the 3D models he has created."

@@ -12,8 +12,7 @@ const Box = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 `;
 
 const Name = styled.h4`
@@ -37,7 +36,7 @@ const TechList = styled.ul`
 `;
 
 const TechItem = styled.li`
-  margin-right: 1rem;
+  margin-right: 1.6rem;
 `;
 
 const LinkWrapper = styled.div`
@@ -69,9 +68,7 @@ const ProjectCard = (project) => {
       <Name>{name}</Name>
       <Line />
       <Spacer axis="vertical" size={10} />
-      <TechList>
-        {techstack && techstack.map((item) => <TechItem>{item}</TechItem>)}
-      </TechList>
+      <TechList>{techstack && techstack.map((item) => <TechItem>{item}</TechItem>)}</TechList>
       <Spacer axis="vertical" size={20} />
       <p style={{ color: 'var(--blue-light)' }}>{description}</p>
       <Spacer axis="vertical" size={10} />
