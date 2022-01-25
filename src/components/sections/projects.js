@@ -15,7 +15,7 @@ const ProjectsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(30rem, 35fr));
   gap: 2rem;
-  place-items: center;
+  place-items: start center;
 `;
 
 const Projects = () => {

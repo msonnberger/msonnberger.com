@@ -8,6 +8,14 @@
     "description": "A web app for remotely exchanging darts scores with your friends in real time. Create a new room and set your game rules or join an existing one and have fun playing!"
   },
   {
+    "name": "Dycards",
+    "slug": "dycards",
+    "url": "https://dycards.com",
+    "repo": "https://github.com/msonnberger/dycards",
+    "techstack": ["Ruby on Rails", "SCSS"],
+    "description": "Dycards is a modern, interactive flashcard app. It has an interactive learning mode which leverages spaced repetition to help you learn new things efficiently."
+  },
+  {
     "name": "Metro Vienna",
     "slug": "metro-vienna-monitor",
     "url": "https://projects.msonnberger.com/metro-vienna-monitor/",
