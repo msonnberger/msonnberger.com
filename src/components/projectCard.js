@@ -68,7 +68,7 @@ const ProjectCard = (project) => {
       <Name>{name}</Name>
       <Line />
       <Spacer axis="vertical" size={10} />
-      <TechList>{techstack && techstack.map((item) => <TechItem>{item}</TechItem>)}</TechList>
+      <TechList>{techstack && techstack.map((item) => <TechItem key={item}>{item}</TechItem>)}</TechList>
       <Spacer axis="vertical" size={20} />
       <p style={{ color: 'var(--blue-light)' }}>{description}</p>
       <Spacer axis="vertical" size={10} />

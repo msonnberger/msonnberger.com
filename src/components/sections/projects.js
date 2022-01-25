@@ -43,7 +43,7 @@ const Projects = () => {
       <ProjectsWrapper>
         {projectsData &&
           projectsData.map((project) => {
-            return <ProjectCard {...project} />;
+            return <ProjectCard {...project} key={project.slug}/>;
           })}
       </ProjectsWrapper>
       <Spacer axis="vertical" size={120} />
