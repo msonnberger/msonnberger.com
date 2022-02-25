@@ -5,6 +5,7 @@ import { IconGithub, IconExternal } from '@components/icons';
 
 const Box = styled.div`
   max-width: 35rem;
+  height: 100%;
   border-radius: 1.2rem;
   background-color: var(--blue-muted);
   padding: 2.4rem;
@@ -42,6 +43,8 @@ const TechItem = styled.li`
 const LinkWrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
+  align-items: flex-end;
+  flex-grow: 1;
   font-size: 2rem;
   font-weight: bold;
   width: 100%;
@@ -68,7 +71,9 @@ const ProjectCard = (project) => {
       <Name>{name}</Name>
       <Line />
       <Spacer axis="vertical" size={10} />
-      <TechList>{techstack && techstack.map((item) => <TechItem key={item}>{item}</TechItem>)}</TechList>
+      <TechList>
+        {techstack && techstack.map((item) => <TechItem key={item}>{item}</TechItem>)}
+      </TechList>
       <Spacer axis="vertical" size={20} />
       <p style={{ color: 'var(--blue-light)' }}>{description}</p>
       <Spacer axis="vertical" size={10} />

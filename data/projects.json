@@ -10,10 +10,10 @@
   {
     "name": "Dycards",
     "slug": "dycards",
-    "url": "https://dycards.com",
+    "url": "https://dycards.projects.multimediatechnology.at/",
     "repo": "https://github.com/msonnberger/dycards",
     "techstack": ["Ruby on Rails", "SCSS"],
-    "description": "Dycards is a modern, interactive flashcard app. It has an interactive learning mode which leverages spaced repetition to help you learn new things efficiently."
+    "description": "Dycards is a modern, interactive flashcard app built in Rails. It features various question types such as multiple choice, single choice or open answer."
   },
   {
     "name": "Metro Vienna",
@@ -28,7 +28,7 @@
     "slug": "portfolio-christoph-schafzahl",
     "url": "https://cschafzahl.com",
     "repo": "https://github.com/ChristophSchafzahl/portfolio-christoph",
-    "techstack": ["React", "Next.js", "TailwindCSS"],
+    "techstack": ["React", "Next.js", "Tailwind"],
     "description": "I built a portfolio website for Christoph, a fellow game dev student of mine, showcasing his game projects as well as some of the 3D models he has created."
   }
 ]
