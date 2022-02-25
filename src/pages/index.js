@@ -1,6 +1,6 @@
 import React from 'react';
 import { GlobalStyle } from '@styles';
-import { Layout, Hero, About, Projects, Contact, Footer } from '@components';
+import { Layout, Hero, About, Projects, Jobs, Contact, Footer } from '@components';
 
 const IndexPage = () => (
   <Layout>
@@ -8,6 +8,7 @@ const IndexPage = () => (
     <Hero />
     <About />
     <Projects />
+    <Jobs />
     <Contact />
     <Footer />
   </Layout>
