@@ -6,5 +6,13 @@
     "from": "2022-08-01",
     "to": "2022-11-30",
     "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
+  },
+  {
+    "company": "Google",
+    "role": "Frontend Engineer Intern",
+    "location": "London, UK",
+    "from": "2023-07-01",
+    "to": "2023-09-01",
+    "bullets": ["Bullet 1", "Bullet 2", "Bullet 3"]
   }
 ]
