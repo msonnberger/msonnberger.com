@@ -36,17 +36,16 @@ const LegalPage = () => (
     <Spacer axis="vertical" size={20} />
     <strong>Media Owner and Editor</strong>
     <p>
-      Martin Sonnberger <br /> A-5412 Puch bei Hallein, Austria
+      Martin Sonnberger <br /> A-2231 Strasshof an der Nordbahn, Austria
     </p>
     <Spacer axis="vertical" size={50} />
     <h2>Privacy Policy</h2>
     <Spacer axis="vertical" size={20} />
     <p>
-      This website does not collect any personal data. However, when accessing
-      this website, your browser automatically transmits data. When running a
-      website, it is important that the server which delivers the content runs
-      safely and smoothly. To do so, it needs to collect so-called logs. These
-      logs include:
+      This website does not collect any personal data. However, when accessing this website, your
+      browser automatically transmits data. When running a website, it is important that the server
+      which delivers the content runs safely and smoothly. To do so, it needs to collect so-called
+      logs. These logs include:
     </p>
     <ul>
       <li>Date and time of the request</li>
@@ -56,9 +55,9 @@ const LegalPage = () => (
     </ul>
     <Spacer axis="vertical" size={20} />
     <p>
-      As this collection of data is a technical requirement to run this website
-      and your IP address is collected anonymously, the collection is fully
-      compliant with the GDPR and does not require your explicit consent.
+      As this collection of data is a technical requirement to run this website and your IP address
+      is collected anonymously, the collection is fully compliant with the GDPR and does not require
+      your explicit consent.
     </p>
   </Layout>
 );

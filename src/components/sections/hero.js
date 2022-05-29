@@ -10,11 +10,11 @@ const StyledHeroSection = styled.section`
 
   h1,
   h2 {
-    font-size: clamp(3.2rem, 8vw, 7rem);
+    font-size: clamp(3.2rem, 8vw, 6.5rem);
   }
 
   p {
-    font-size: clamp(2rem, 4vw, 2.4rem);
+    font-size: clamp(2rem, 4vw, 2.2rem);
   }
 
   ul {
@@ -47,27 +47,19 @@ const Hero = () => (
         rel="noreferrer noopener"
       >
         Salzburg University of Applied Sciences.
-      </a>{' '}
-      I like building cool things for the web.
+      </a>
+      <br />I like building cool things for the web.
     </p>
     <Spacer axis="vertical" size={20} />
     <ul>
       <li>
-        <a
-          href="https://www.github.com/msonnberger"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
+        <a href="https://www.github.com/msonnberger" target="_blank" rel="noreferrer noopener">
           <IconGithub />
         </a>
       </li>
       <Spacer axis="horizontal" size={20} />
       <li>
-        <a
-          href="https://www.linkedin.com/in/msonnberger"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
+        <a href="https://www.linkedin.com/in/msonnberger" target="_blank" rel="noreferrer noopener">
           <IconLinkedin />
         </a>
       </li>

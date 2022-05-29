@@ -42,7 +42,8 @@ const TechItem = styled.li`
 
 const LinkWrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  gap: 16px;
   align-items: flex-end;
   flex-grow: 1;
   font-size: 2rem;
@@ -52,10 +53,12 @@ const LinkWrapper = styled.div`
   a {
     box-shadow: none;
     display: flex;
+    opacity: 0.6;
   }
 
   a:hover {
     color: var(--orange);
+    opacity: 0.8;
   }
 
   svg {
@@ -80,15 +83,11 @@ const ProjectCard = (project) => {
       <LinkWrapper>
         {url && (
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <span>Live Site</span>
-            <Spacer axis="horizontal" size={4} />
             <IconExternal />
           </a>
         )}
         {repo && (
           <a href={repo} target="_blank" rel="noopener noreferrer">
-            <span>Code</span>
-            <Spacer axis="horizontal" size={6} />
             <IconGithub />
           </a>
         )}

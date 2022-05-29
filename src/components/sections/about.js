@@ -3,13 +3,6 @@ import styled from 'styled-components';
 import { StaticImage } from 'gatsby-plugin-image';
 import { SectionTitle } from '@components';
 
-const calcAge = () => {
-  const myBirthday = new Date(2001, 8, 26); // month is 0-based index
-  const diffMilliSeconds = Date.now() - myBirthday;
-  const age = new Date(diffMilliSeconds).getUTCFullYear() - 1970;
-  return age;
-};
-
 const StyledAboutSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -31,17 +24,15 @@ const About = () => (
     />
     <SectionTitle>About Me</SectionTitle>
     <p>
-      Hello! I’m a {calcAge()} year old college student from Austria. Since
-      middle school I’ve known that I’ll want to do “something with computers”.
-      After studying one semester of traditional computer science in Vienna, it
-      clicked for me and I knew that I wanted to become a professional web
-      developer. In order to further pursue this dream, I decided to move to
-      Salzburg to study MultiMediaTechnology there.
+      Hello! I’m a college student and web developer from Austria. I'm currently doing my Bachelor's
+      degree in MultiMediaTechnology at Salzburg University of Applied Sciences. Soon, I'll start my
+      first internship at{' '}
+      <a href="https://www.cloudflight.io" target="_blank" rel="noreferrer">
+        Cloudflight
+      </a>{' '}
+      in Vienna. I enjoy all things related to the web.
     </p>
-    <p>
-      When not sitting in front of my computer, I like cooking and playing the
-      trumpet.
-    </p>
+    <p>When not sitting in front of my computer, I like cooking and playing the trumpet.</p>
   </StyledAboutSection>
 );
 

@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@fontsource/fira-code": "^4.5.1",
+    "@fontsource/inter": "^4.5.10",
     "@fontsource/pacifico": "^4.5.0",
     "@fontsource/source-sans-pro": "^4.5.0",
     "babel-plugin-styled-components": "^1.13.2",

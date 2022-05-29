@@ -3,7 +3,7 @@ import variables from './variables';
 
 const GlobalStyle = createGlobalStyle`
   ${variables}
-  
+
   *,
   *::before,
   *::after {
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: var(--blue-dark);
     color: var(--blue-mid);
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Inter', -apple-system, sans-serif;
     font-size: 2rem;
   }
 
@@ -36,13 +36,28 @@ const GlobalStyle = createGlobalStyle`
   a {
     text-decoration: none;
     color: inherit;
-    box-shadow: 0 -4px 0 0 var(--orange) inset;
-    transition: all 100ms;
   }
 
-  a:hover {
-    box-shadow: 0 -28px 0 0 var(--orange) inset;
-    color: var(--blue-dark);
+  p > a {
+    color: var(--orange);
+    position: relative;
+    display: inline-block;
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  p > a::after {
+    display: block;
+    content: '';
+    height: 1px;
+    width: 0;
+    position: absolute;
+    bottom: 0.2em;
+    background: var(--orange);
+    opacity: 0.5;
+    transition: width 100ms;
   }
 
   ul {
