@@ -1,11 +1,11 @@
 [
   {
-    "name": "darts.io",
-    "slug": "darts-io",
-    "url": "https://projects.msonnberger.com/darts-io/",
-    "repo": "https://www.github.com/msonnberger/darts-io/",
-    "techstack": ["PHP", "WebSocket", "Vanilla JS"],
-    "description": "A web app for remotely exchanging darts scores with your friends in real time. Create a new room and set your game rules or join an existing one and have fun playing!"
+    "name": "Rindr",
+    "slug": "rindr",
+    "url": "https://rindr.msonnberger.com/",
+    "repo": "https://www.github.com/msonnberger/rindr/",
+    "techstack": ["React", "Supabase", "TypeScript", "Tailwind"],
+    "description": "Rindr is a platform for students of FH Salzburg to share and find rides to and from university. You automatically see suggested rides based on your home address."
   },
   {
     "name": "Dycards",
@@ -22,6 +22,13 @@
     "repo": "https://www.github.com/msonnberger/metro-vienna-monitor/",
     "techstack": ["React", "Node.js", "Next.js"],
     "description": "A departure monitor for Vienna's metro lines using the official realtime API provided by Wiener Linien. Monitor design resembles original displays in metro stations."
+  },
+  {
+    "name": "darts.io",
+    "slug": "darts-io",
+    "repo": "https://www.github.com/msonnberger/darts-io/",
+    "techstack": ["PHP", "WebSocket", "Vanilla JS"],
+    "description": "A web app for remotely exchanging darts scores with your friends in real time. Create a new room and set your game rules or join an existing one and have fun playing!"
   },
   {
     "name": "cschafzahl.com",

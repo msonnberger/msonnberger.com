@@ -78,16 +78,20 @@ const ProjectCard = (project) => {
       <p style={{ color: 'var(--blue-light)' }}>{description}</p>
       <Spacer axis="vertical" size={10} />
       <LinkWrapper>
-        <a href={url} target="_blank" rel="noopener noreferrer">
-          <span>Live Site</span>
-          <Spacer axis="horizontal" size={4} />
-          <IconExternal />
-        </a>
-        <a href={repo} target="_blank" rel="noopener noreferrer">
-          <span>Code</span>
-          <Spacer axis="horizontal" size={6} />
-          <IconGithub />
-        </a>
+        {url && (
+          <a href={url} target="_blank" rel="noopener noreferrer">
+            <span>Live Site</span>
+            <Spacer axis="horizontal" size={4} />
+            <IconExternal />
+          </a>
+        )}
+        {repo && (
+          <a href={repo} target="_blank" rel="noopener noreferrer">
+            <span>Code</span>
+            <Spacer axis="horizontal" size={6} />
+            <IconGithub />
+          </a>
+        )}
       </LinkWrapper>
     </Box>
   );
