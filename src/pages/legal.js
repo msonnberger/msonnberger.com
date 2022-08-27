@@ -37,6 +37,7 @@ const LegalPage = () => (
     <strong>Media Owner and Editor</strong>
     <p>
       Martin Sonnberger <br /> A-2231 Strasshof an der Nordbahn, Austria
+      <br /> Contact: <a href="mailto:hello@msonnberger.com">hello@msonnberger.com</a>
     </p>
     <Spacer axis="vertical" size={50} />
     <h2>Privacy Policy</h2>

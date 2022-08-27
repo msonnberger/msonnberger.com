@@ -24,9 +24,8 @@ const About = () => (
     />
     <SectionTitle>About Me</SectionTitle>
     <p>
-      Hello! I’m a college student and web developer from Austria. I'm currently doing my Bachelor's
-      degree in MultiMediaTechnology at Salzburg University of Applied Sciences. Soon, I'll start my
-      first internship at{' '}
+      Hello! I’m a college student and web developer from Austria. I'm studying  MultiMediaTechnology at Salzburg University of Applied Sciences
+      and am currently working as an Software Engineer Intern at{' '}
       <a href="https://www.cloudflight.io" target="_blank" rel="noreferrer">
         Cloudflight
       </a>{' '}
