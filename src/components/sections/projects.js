@@ -1,12 +1,19 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import styled from 'styled-components';
-import { Spacer, SectionTitle, ProjectCard } from '@components';
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import styled from "styled-components";
+import { Spacer, SectionTitle, ProjectCard } from "@components";
 
 const ProjectsSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .memoji {
+    width: 35rem;
+    transform: translate(-40px, 18px);
+    align-self: start;
+  }
 `;
 
 const ProjectsWrapper = styled.div`
@@ -38,12 +45,18 @@ const Projects = () => {
 
   return (
     <ProjectsSection>
-      <Spacer axis="vertical" size={70} />
+      <StaticImage
+        className="memoji"
+        src="../../images/memoji.png"
+        alt="Memoji of myself"
+        width={350}
+        height={350}
+      />
       <SectionTitle>Stuff I've Built</SectionTitle>
       <ProjectsWrapper>
         {projectsData &&
           projectsData.map((project) => {
-            return <ProjectCard {...project} key={project.slug}/>;
+            return <ProjectCard {...project} key={project.slug} />;
           })}
       </ProjectsWrapper>
       <Spacer axis="vertical" size={120} />
