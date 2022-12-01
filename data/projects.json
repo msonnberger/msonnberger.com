@@ -10,7 +10,6 @@
   {
     "name": "Dycards",
     "slug": "dycards",
-    "url": "https://www.dycards.com/",
     "repo": "https://github.com/msonnberger/dycards",
     "techstack": ["Ruby on Rails", "SCSS"],
     "description": "Dycards is a modern, interactive flashcard app built in Rails. It features various question types such as multiple choice, single choice or open answer."
