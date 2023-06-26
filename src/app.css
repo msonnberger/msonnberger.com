@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'Manrope';
+		font-style: normal;
+		font-weight: 100 900;
+		font-display: auto;
+		src: url('/fonts/Manrope-Variable.woff2') format('woff2');
+		font-named-instance: 'Regular';
+	}
+
+	@font-face {
+		font-family: 'Delicious Handrawn';
+		font-style: normal;
+		font-weight: 400;
+		font-display: auto;
+		src: url('/fonts/DeliciousHandrawn.woff2') format('woff2');
+		font-named-instance: 'Regular';
+	}
+}
