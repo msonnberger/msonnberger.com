@@ -7,7 +7,7 @@
 	<p>
 		<span class="font-bold">Media Owner and Editor:</span><br />
 		Martin Sonnberger <br />
-		1190 Wien, Austria <br />
+		1020 Wien, Austria <br />
 		<Link href="mailto:hello@msonnberger.com">hello@msonnberger.com</Link>
 	</p>
 </section>
